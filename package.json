@@ -1,0 +1,32 @@
+{
+  "name": "change-me",
+  "version": "1.0.0",
+  "description": "Change this description.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "start:dev": "nodemon .",
+    "lint": "eslint --fix src",
+    "prebuild": "rimraf ./build",
+    "build": "tsc -p tsconfig.json",
+    "start": "node ."
+  },
+  "keywords": [
+    "change",
+    "me"
+  ],
+  "author": "n1kkl",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {}
+}
